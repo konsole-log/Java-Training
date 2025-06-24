@@ -1,0 +1,17 @@
+#CLASS DAY-1(6/24):
+-> class name should be same as the file name
+-> entry point always start as public static void main(String[] args){}
+Access modifier:
+    -public:
+    -static: this makes method run without creating an object
+    -main(): this is the name of method
+*==we should use import java.util.Scanner for Scanner class==*
+Scanner: used to take input from the user this is the Scanner class
+-new: keyword to create new object
+syntax: Scanner <scanner_name> = new Scanner(System.in);
+=Tasks:
+    1. odd and even
+    2. 1 to 10 print
+    3. fact using while loop user input
+
+#CLASS DAY-2(6/26)
