@@ -15,3 +15,24 @@ syntax: Scanner <scanner_name> = new Scanner(System.in);
     3. fact using while loop user input
 
 #CLASS DAY-2(6/26)
+--> about OOP in java 
+--> attributes and other stuffs like method and instances
+--> making constructor
+use of stack and heap memory to save the stuffs for the objects and class
+constructor of basically two types used in Java they are:
+* default constructor: where we don't pass any argument/parameter and in default cases it is 
+given by java compiler.
+* parameterised constructor: where we pass argument/parameters and it is user defined
+example for the default constructor and parameterised constructor is given below:
+class Shape{
+    private int dimension;//this is called as attribute 
+        Shape(){
+            //this is the default constructor
+        }
+        Shape(int dimension){
+            this.dimension=dimension
+            //this is parameterised constructor
+        }
+}
+for encapsulation we use getter and setter:
+-->getter is  
