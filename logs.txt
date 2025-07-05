@@ -35,4 +35,32 @@ class Shape{
         }
 }
 for encapsulation we use getter and setter:
--->getter is  
+-->getter is used to access the attributes from the class
+-->setter is used to set the attributes of the class
+
+#CLASS DAY-3(6/29)
+-->about static keyword where it is used
+* when static is used in the variable then it needs class name to access it and has same values for the all objects of the class
+* when static is used in the method then the method can only access static variable along and needs class to call it
+-->about inheritance
+* we use extend keyword for inheritance
+* there is no concept for class multiple inheritance but we can use the interfaces and abstractions for them
+--> about final keyword 
+* when used in class we cannot inherit from that class
+* when used in variable we cannot change its variable unless initialised from the constructor
+* when used in method we can call the method but we cannot override it in child class
+#TASKS#
+1. create class animal and child class name wild animals and demonstrate inheritance and use of different keywords like final
+and static.
+
+
+#CLASS DAY-4(7/1)
+-->about polymorphism:compile time and run-time polymorphism
+
+
+#CLASS DAY-5(7/3)
+-->about exception handling
+using try and catch block
+here,
+Throwable --> Exception --> RuntimeException --> NullPointerException
+above shows the multilevel inheritance.
