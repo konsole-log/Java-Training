@@ -64,3 +64,5 @@ using try and catch block
 here,
 Throwable --> Exception --> RuntimeException --> NullPointerException
 above shows the multilevel inheritance.
+* try block tries until first exception is met then it searches for correct catch block for that exception and goes
+out of the try block*
