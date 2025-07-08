@@ -53,10 +53,8 @@ for encapsulation we use getter and setter:
 1. create class animal and child class name wild animals and demonstrate inheritance and use of different keywords like final
 and static.
 
-
 #CLASS DAY-4(7/1)
 -->about polymorphism:compile time and run-time polymorphism
-
 
 #CLASS DAY-5(7/3)
 -->about exception handling
@@ -66,3 +64,66 @@ Throwable --> Exception --> RuntimeException --> NullPointerException
 above shows the multilevel inheritance.
 * try block tries until first exception is met then it searches for correct catch block for that exception and goes
 out of the try block*
+
+#CLASS DAY-6(7/6)
+-->more about try catch block with finally block
+even when there is no exception try block is executed due to finally block.
+-->about throw keyword which helps us to throw exception but we need try-catch block to handle it.
+-->about throws keyword which is used to define where method gives exception or not and which
+type of exception it gives
+example:
+    public static void validateAge(int age) throws Exception, IllegalArgumentException{
+        if(age<=18){
+            //==> compile time exception: throw new IllegalArgumentException("Age is not valid");//exception created
+            throw new  Exception("Age is not valid");//compile time exception
+        }
+        if(age>18){
+            throw new IllegalArgumentException("Age is greater);
+        }
+        System.out.println("age is valid");
+    }
+--The above method throws exception and it must be handled--
+* Exception propagation *
+Exception is propagated to the caller function.
+* Custom exception *
+we can make custom exception by inheriting either RuntimeException or Exception(for compile time)
+task:
+1.to create class that takes user input about fname and lname
+and fname and lname should be characters so should be handled using custom exception.
+2. and age should be only number and handled using custom exception.
+
+#CLASS DAY-7(7/8)
+-->about collection framework
+    ->list,set,map
+    ->primitive and non-primitive data tyoe//wrapper class
+    ->int,Integer are different: int is primitive data type and Integer is non-primitive data type
+    ->double, Double are different:same as int
+1. LIST:
+   Syntax:
+   List<Integer> this is from java.util.List
+   List<datatype> list_name = new ArrayList<>();
+   List<datatype> llist_name= new LinkedList<>();
+   Methods:
+    -> list_name.add(data):= to add data in the list_name
+    -> list_name.size():= to return the size of list_name
+    -> list_name.get(i):=to return the data at index 'i' of list_nam
+    -> list_name.set(i,d):= used to update data in index 'i' with new_data 'd'
+    -> list_name.indexof(d):= returns the index of first occurence of data 'd' in list_name
+    -> list_name.remove(i):= to remove data at index 'i' we can also remove using object 
+    Traversing loop we can use:
+    * basic for loop
+    --Example--
+    for(int i=0;i<list_name.size();i++){
+        System.out.println(list_name.get(i));
+    }
+    * enchanced for loop
+    --Example--
+    for(datatype n: list_name){
+        System.out.println(n);
+    }
+    * using Iterator
+    --Example--
+    Iterator<datatype> iterators=list_name.iterator();
+    while(iterators.hasNext()){
+        System.out.println(iterators.next());
+    }
