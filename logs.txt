@@ -110,7 +110,7 @@ and fname and lname should be characters so should be handled using custom excep
     -> list_name.set(i,d):= used to update data in index 'i' with new_data 'd'
     -> list_name.indexof(d):= returns the index of first occurence of data 'd' in list_name
     -> list_name.remove(i):= to remove data at index 'i' we can also remove using object 
-    Traversing loop we can use:
+   Traversing list we can use:
     * basic for loop
     --Example--
     for(int i=0;i<list_name.size();i++){
@@ -127,3 +127,30 @@ and fname and lname should be characters so should be handled using custom excep
     while(iterators.hasNext()){
         System.out.println(iterators.next());
     }
+2. SET:
+   -> no index and stores uniquely and there is no duplicates
+   ->subclasses of SET: set,hashset,linkedhashset,treeset
+   Syntax:
+   Set<datatype> set_name=new HashSet<>();
+
+   Methods:
+    -> set_name.add(data):=to add data to the set
+    -> set_name.remove(object):= since there is no index then we have to remove by making object
+   Traversing we can only use enhanced for loop
+
+3. MAP:
+   -> this is <key,value> 
+   -> hashmap,linkedhashmap,treemap
+   Syntax:
+   -> Map<keyDataType, valueDataType> map_name=new HashMap<>()
+   Methods:
+    -> map_name.put(k,v):=to put value 'v' in key 'k'
+    -> map_name.get(k):= to return the value at key 'k'
+    -> map_name.remove(k):= to remove value at key 'k'
+    -> m.getKey():= to get key of value m in Map
+    -> m.getValue():=to get value of m in Map
+    -> map_name.keySet():= returns the set of key
+    -> map_name.values():=returns the set of values
+   Traversing MAP:
+   for(Map.Entry<keyDatatype,valueDatatype> m: hashMap.entrySet()){}
+
