@@ -154,3 +154,18 @@ and fname and lname should be characters so should be handled using custom excep
    Traversing MAP:
    for(Map.Entry<keyDatatype,valueDatatype> m: hashMap.entrySet()){}
 
+#CLASS DAY-8(7/10)
+request from client->application program(JAVA)-> database
+# One class represent the attributes of database table
+# One object represent the tuple for database table
+1. UI
+2. Validation
+-> about DAO pattern: D-Data, A-Access, O-Object
+
+[M-Model,V-view,C-control,request and response]==> service layer ==calls DA0==> DA0(database)
+Service layer divided into:
+-> Business logic: Independent of Service logic and database
+-> Service logic: tie up with database
+
+
+
