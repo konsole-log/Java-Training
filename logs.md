@@ -47,3 +47,23 @@ public class Main{
   * parameterised constructor
   * non-parameterised constructor
 > Constructors are further discussed below:
+1. #### Parameterised Constructor: 
+    It is used where we pass argument/parameters and it is user defined.<br><br>
+    **Example**<br>
+    ```java
+    public class Shape{
+        private int dimension;
+        Shape(int dimension){
+            this.dimension = dimension;
+        }
+    }
+    ```
+2. #### Non-parameterised Constructor: 
+    In this constructor we don't pass argument/parameter and in default cases it is given by java compiler.<br><br>
+    **Example**<br>
+    ```java
+    public class Shape{
+        private int dimension;
+        Shape(){}
+    }
+    ```
