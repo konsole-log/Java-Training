@@ -40,6 +40,7 @@ public class Main{
 > 3. to find factorial of number using while loop
 
 
+
 # CLASS DAY-2(6/26):
 * about OOP in JAVA
 * about attributes and other things like method and instances
@@ -67,3 +68,27 @@ public class Main{
         Shape(){}
     }
     ```
+> For encapsulation we use getter and setter methods:
+> - getter is used to access the attributes from the class
+> - setter is used to set the atttributes of the class
+>
+**EXAMPLE**<br>
+```java
+public class Student{
+    private String firstname;
+    private String lastname;
+    public void setFirstName(String firstname){
+        this.firstname=firstname;
+    }
+    public void setLastName(String lastname){
+        this.lastname=lastname;
+    }
+    public String getFirstName(){
+        return firstname;
+    }
+    public String getLastName(){
+        return lastname;
+    }
+}
+```
+# CLASS DAY-3(6/29):
