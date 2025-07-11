@@ -91,4 +91,17 @@ public class Student{
     }
 }
 ```
-# CLASS DAY-3(6/29):
+# CLASS DAY-3(6/29): 
+> **`static` keyword:**
+> - when `static` is used in the variable then it needs class name to access it and has same values for the all objects of the class
+> - when `static` is used in the method then the method can only access static variable along and needs class to call it
+
+> **About inheritance:**
+> - we use `extend` keyword for inheritance
+> - there is no concept for multiple inheritance but we can use interfaces and abstractions for them
+
+> **About `final` keyword:**
+> - when used in class we cannot inherit from that class
+> - when used in variable we cannot cchange its variable unless initialised from the [`constructor`](#class-day-2626)
+> - when used in method we can call the method but we cannot override it in `child class`
+
